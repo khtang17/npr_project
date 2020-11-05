@@ -10,7 +10,7 @@ Setup Python environment
 <pre>(base)$ conda activate npr-py3</pre>
 
 
-<pre>(npr-py3)$ conda install -c conda-forge vaex</pre> // vaex is dataframe library for huge libraries
+<pre>(npr-py3)$ conda install -c conda-forge vaex // vaex is dataframe library for huge libraries</pre>
 
 <pre>(npr-py3)$ pip install ipython==7.9.0</pre>
 
