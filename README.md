@@ -5,19 +5,19 @@ calculate npr values of a chemical library and plot their distribution
 Setup Python environment
 - Download Anaconda3 installer and install follow the instruction (https://www.anaconda.com/products/individual) - Create anaconda env and install packages
 
-(base)$ conda create -c rdkit --name npr-py3 rdkit
+<pre>(base)$ conda create -c rdkit --name npr-py3 rdkit</pre>
 
-(base)$ conda activate npr-py3
+<pre>(base)$ conda activate npr-py3</pre>
 
-Install vaex - dataframe library for huge libraries
-(npr-py3)$ conda install -c conda-forge vaex
 
-(npr-py3)$ pip install ipython==7.9.0
+<pre>(npr-py3)$ conda install -c conda-forge vaex</pre> // vaex is dataframe library for huge libraries
+
+<pre>(npr-py3)$ pip install ipython==7.9.0</pre>
 
 ## Run NPR calculation
 Your smiles file should be in this format with no header: <smiles> <cid>
 
-(npr-py3)$ python extra_newprops.py {smiles_file}
+<pre>(npr-py3)$ python extra_newprops.py {smiles_file}</pre>
 Notes:
 
 - Failed and success molecules are output from this script.
@@ -27,14 +27,14 @@ Notes:
 ## Make Heatmap
 Generate h5py binary file
 
-(npr-py3)$ python py_csv2hdf5.py {output_smiles_file}
+<pre>(npr-py3)$ python py_csv2hdf5.py {output_smiles_file}</pre>
 
 This script without output h5py that is then can be read by vaex library (it is useful for read huge library into dataframe)
 
 ## Plot
 Run Jupyter-Notebook
 
-(npr-py3)$ jupyter-notebook
+<pre>(npr-py3)$ jupyter-notebook</pre>
 
 From jupyter-notebook interface
 
