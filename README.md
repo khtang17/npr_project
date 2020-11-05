@@ -3,7 +3,8 @@ calculate npr values of a chemical library and plot their distribution
 
 ## Calculate NPR
 Setup Python environment
-- Download Anaconda3 installer and install follow the instruction (https://www.anaconda.com/products/individual) - Create anaconda env and install packages
+- Download Anaconda3 installer and install follow the instruction (https://www.anaconda.com/products/individual) 
+- Create anaconda env and install packages
 
 <pre>(base)$ conda create -c rdkit --name npr-py3 rdkit</pre>
 
